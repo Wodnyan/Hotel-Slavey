@@ -1,0 +1,74 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+}
+
+nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-width: 45%;
+}
+
+nav .nav-links li {
+  list-style: none;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+}
+
+nav .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  z-index: 1;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+nav .hamburger > div::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: inherit;
+}
+
+nav .hamburger > div::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  height: 2px;
+  background-color: inherit;
+}
+/*# sourceMappingURL=menu.css.map */

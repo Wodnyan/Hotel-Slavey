@@ -1,0 +1,17 @@
+/*$primary-color: #52B2CF;
+$secondary-color:  #D1CFE2;
+$1primary-color: #F4F482;
+$2primary-color: #F7EDF0;
+*/
+/*http://marriottgrandcaymanbeachhouse.com/*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
