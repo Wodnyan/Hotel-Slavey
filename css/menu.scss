@@ -9,6 +9,8 @@ nav {
         justify-content: space-around;
         min-width: 45%;
 
+
+
         li {
             list-style: none;
         }
@@ -24,13 +26,17 @@ nav {
         right: 0;
         width: 50px;
         height: 50px;
-        display: flex;
         padding: 1rem;
         z-index: 1;
         display: flex;
         justify-content: center;
         align-items: center;
+        display: none;
+        cursor: pointer;
+        transition: 1s ease;
     }
+
+
 
     .hamburger>div {
         position: relative;
@@ -57,8 +63,6 @@ nav {
         }
     }
 
-<<<<<<< Updated upstream
-=======
 
 }
 
@@ -79,44 +83,44 @@ nav {
         transform: translateX(100%);
         background-color: #000;
         transition: transform 0.5s ease-in;
-        animation: navLinkFade;
 
         li {
             opacity: 0;
-            color: white;
+            animation: navLinkFade;
+        }
+
+        .hamburger {
+            display: block !important;
+        }
+
+
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
         }
     }
 
-    .hamburger {
-        display: block !important;
+    .toggle .hamburger>div {
+        background-color: #fff;
     }
 
+    .toggle .hamburger>div::before,
+    .toggle .hamburger>div::after {
+        top: 0;
+        transform: rotate(90deg);
 
-}
 
-.nav-active {
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
     }
-
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .hamburger>div {
-    background-color: #fff;
-}
-
-.toggle .hamburger>div::before,
-.toggle .hamburger>div::after {
-    top: 0;
-    transform: rotate(90deg);
->>>>>>> Stashed changes
 }
