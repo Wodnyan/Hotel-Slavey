@@ -67,6 +67,11 @@ nav {
 }
 
 @media screen and (max-width : 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+
     .nav-links {
         height: 58vh;
         position: absolute;
@@ -82,6 +87,7 @@ nav {
 
         li {
             opacity: 0;
+
         }
     }
 
@@ -94,4 +100,42 @@ nav {
 
 .nav-active {
     transform: translateX(0%);
+=======
+            animation: navLinkFade;
+        }
+
+        .hamburger {
+            display: block !important;
+        }
+
+
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .hamburger>div {
+        background-color: #fff;
+    }
+
+    .toggle .hamburger>div::before,
+    .toggle .hamburger>div::after {
+        top: 0;
+        transform: rotate(90deg);
+
+    }
+
 }

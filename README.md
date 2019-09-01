@@ -1,2 +1,2 @@
-# Hotel-Slavey
-A makeover design for a 4 star bulgarian hotel 
+# Hotel-Solis
+A design for an imaginary hotel where i want to test my skills in responsive web design

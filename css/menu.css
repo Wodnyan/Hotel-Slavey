@@ -76,6 +76,7 @@ nav .hamburger > div::after {
 }
 
 @media screen and (max-width: 768px) {
+
   .nav-links {
     height: 58vh;
     position: absolute;
@@ -102,6 +103,7 @@ nav .hamburger > div::after {
   }
   .nav-links li {
     opacity: 0;
+
   }
   .hamburger {
     display: block !important;
@@ -111,5 +113,49 @@ nav .hamburger > div::after {
 .nav-active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+
+    -webkit-animation: navLinkFade;
+            animation: navLinkFade;
+  }
+  .nav-links .hamburger {
+    display: block !important;
+  }
+  .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  @-webkit-keyframes navLinkFade {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  .toggle .hamburger > div {
+    background-color: #fff;
+  }
+  .toggle .hamburger > div::before,
+  .toggle .hamburger > div::after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
 }
 /*# sourceMappingURL=menu.css.map */
