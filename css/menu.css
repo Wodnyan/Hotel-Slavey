@@ -160,33 +160,4 @@ nav .hamburger > div::before {
             transform: translateX(0px);
   }
 }
-
-.toggle .hamburger > div {
-  background-color: #fff;
-}
-
-.toggle .hamburger > div::before,
-.toggle .hamburger > div::after {
-  top: 0;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-@-webkit-keyframes {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
-}
-
-@keyframes {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
-}
 /*# sourceMappingURL=menu.css.map */
