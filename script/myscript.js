@@ -6,7 +6,11 @@ const navSlide = () => {
         nav.classList.toggle('nav-active')
     });
     navLinks.forEach((link, index) => {
+        if (link.style.animation) {
 
+        } else {
+            link.style.animation = 'navLinkFade 0.5s ease forward'
+        }
     })
 }
 const app = () => {
