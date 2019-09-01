@@ -57,4 +57,66 @@ nav {
         }
     }
 
+<<<<<<< Updated upstream
+=======
+
+}
+
+@media screen and (max-width : 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        height: 58vh;
+        position: absolute;
+        right: 0px;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        background-color: #000;
+        transition: transform 0.5s ease-in;
+        animation: navLinkFade;
+
+        li {
+            opacity: 0;
+            color: white;
+        }
+    }
+
+    .hamburger {
+        display: block !important;
+    }
+
+
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .hamburger>div {
+    background-color: #fff;
+}
+
+.toggle .hamburger>div::before,
+.toggle .hamburger>div::after {
+    top: 0;
+    transform: rotate(90deg);
+>>>>>>> Stashed changes
 }
