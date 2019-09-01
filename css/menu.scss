@@ -121,6 +121,20 @@ nav {
         top: 0;
         transform: rotate(90deg);
 
+<<<<<<< Updated upstream
 
+=======
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+>>>>>>> Stashed changes
     }
 }

@@ -149,4 +149,22 @@ nav .hamburger > div::after {
             transform: rotate(90deg);
   }
 }
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
 /*# sourceMappingURL=menu.css.map */
