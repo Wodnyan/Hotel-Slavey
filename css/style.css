@@ -8,5 +8,11 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+main {
+  background-color: #FCCD04;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

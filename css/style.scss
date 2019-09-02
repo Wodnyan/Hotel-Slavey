@@ -9,8 +9,16 @@ $color-5 : #17E9E0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+
+}
+
+main {
+    background-color: #FCCD04;
+    height: 100vh;
 }
