@@ -10,21 +10,16 @@ const navSlide = () => {
             if (link.style.animation) {
                 link.style.animation = '';
             } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.5}s`;
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 6 + 0.5}s`;
             }
         });
         //Burger toggle
         burger.classList.toggle('active');
     });
-    navLinks.forEach((link, index) => {
-        if (link.style.animation) {
 
-        } else {
-            link.style.animation = 'navLinkFade 0.5s ease forward'
-        }
-    })
-}
+
+};
 const app = () => {
     navSlide();
-}
+};
 app();
