@@ -12,7 +12,25 @@ body {
 }
 
 main {
-  background-color: #FCCD04;
   height: 100vh;
+}
+
+main .hero-img {
+  height: 100vh;
+  background-image: url(/images/hotel-front.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main .hero-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(252, 205, 4, 0.4);
+  z-index: 5;
 }
 /*# sourceMappingURL=style.css.map */

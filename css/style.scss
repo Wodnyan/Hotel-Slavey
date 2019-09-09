@@ -1,4 +1,4 @@
-$color-1 : #FCCD04;
+$color-1 : rgba(252, 205, 4, 0.4);
 $color-2 : #A64AC9;
 $color-3 : #FFB48f;
 $color-4 : #F5E6CC;
@@ -19,6 +19,26 @@ body {
 }
 
 main {
-    background-color: #FCCD04;
     height: 100vh;
+
+    .hero-img {
+        height: 100vh;
+        background-image: url(/images/hotel-front.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            background: $color-1;
+            z-index: 5;
+        }
+
+    }
+
 }
