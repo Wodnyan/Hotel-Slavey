@@ -14,37 +14,59 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  margin: 10px;
 }
 
 main {
-  height: 100vh;
+  height: 90vh;
 }
 
 main .hero-img {
-  height: 100vh;
-  background-image: url(/images/hotel-front.jpg);
+  height: 90vh;
+  background-image: url(/images/hotel-front-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-main .hero-img::after {
-  content: '';
+main .hero-txt {
   position: absolute;
-  top: 0;
+  top: 70%;
   left: 0;
-  height: 100vh;
-  width: 100vw;
-  background: rgba(252, 205, 4, 0.4);
-  z-index: 1;
+  -webkit-transform: translate(0%, -70%);
+          transform: translate(0%, -70%);
+  padding-left: 1rem;
+  color: #fff;
+}
+
+main .hero-txt h1 {
+  font-size: 3rem;
+}
+
+main .btn {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.541);
+  padding: 10px 25px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
+  border-radius: 1px;
+}
+
+main .btn:hover {
+  background-color: black;
+  color: #bbbbbb;
 }
 
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -59,6 +81,7 @@ nav .nav-links {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   min-width: 40%;
+  z-index: 9;
 }
 
 nav .nav-links li {
@@ -67,6 +90,7 @@ nav .nav-links li {
 
 nav .nav-links li a {
   text-decoration: none;
+  color: white;
 }
 
 nav .hamburger {
@@ -86,6 +110,7 @@ nav .hamburger {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  z-index: 9;
 }
 
 nav .hamburger > div {
@@ -133,7 +158,8 @@ nav .active > div::after {
 
 @media screen and (max-width: 768px) {
   body {
-    overflow-x: hidden;
+    overflow: hidden;
+    margin: 0;
   }
   .nav-links {
     position: absolute;
@@ -196,5 +222,66 @@ nav .active > div::after {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
+}
+
+section {
+  height: 90%;
+  margin: 10px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+section .ver {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-image: url(../images/beach.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section .hor {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  background-image: url(../images/bed-room.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section .cube-l {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  background-image: url(../images/food.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section .cube-r {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  background-color: #e4d6d6;
 }
 /*# sourceMappingURL=menu.css.map */
