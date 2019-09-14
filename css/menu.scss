@@ -20,6 +20,7 @@ body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     margin: 10px;
+    color: #fff;
 }
 
 main {
@@ -54,7 +55,7 @@ main {
         padding: 10px 25px;
         display: inline-block;
         cursor: pointer;
-        transition: 1s ease-in;
+        transition: 0.3s ease-out;
         border-radius: 1px;
 
         &:hover {
@@ -72,6 +73,7 @@ nav {
     align-items: center;
     min-height: 8vh;
     z-index: 2;
+    transition: background-color 0.5s ease;
 
     .nav-links {
         display: flex;
@@ -91,16 +93,11 @@ nav {
 
     .hamburger {
         position: absolute;
-        top: 0;
         right: 0;
         width: 50px;
-        height: 50px;
         padding: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
         cursor: pointer;
-        z-index: 9;
     }
 
     //Hamburger lines
@@ -110,10 +107,9 @@ nav {
         left: 0;
         width: 100%;
         height: 2px;
-        background-color: #000;
-        display: none;
+        background-color: #fff;
+        border-radius: 5px;
         transition: all 0.3s ease;
-
     }
 
     .hamburger>div::before,
@@ -123,7 +119,9 @@ nav {
         width: 100%;
         height: 2px;
         background: inherit;
+        border-radius: 5px;
         transition: 0.5s ease;
+
     }
 
     .hamburger>div::after {
@@ -149,11 +147,15 @@ nav {
     }
 }
 
+//Makes the nav black
+.navBlack {
+    background-color: #000;
+}
 
 //For screens under 768pxs
 @media screen and (max-width:768px) {
     body {
-        overflow: hidden;
+        overflow-x: hidden;
         margin: 0;
     }
 
@@ -176,9 +178,16 @@ nav {
     }
 
 
-    .hamburger>div {
-        display: block !important;
+    //Has to be more specific otherwise gets overwritten
+    main nav .hamburger {
+        display: block;
+
     }
+
+    section {
+        display: flex;
+    }
+
 }
 
 //Unhides the mobile menu
@@ -215,6 +224,7 @@ section {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+
     }
 
     .hor {
@@ -241,3 +251,5 @@ section {
         background-color: rgb(228, 214, 214);
     }
 }
+
+@media screen and (max-width: 768px) {}
